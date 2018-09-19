@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Server component</title>
-</head>
-<body>
+
 <h1>Server component</h1>
-<p>{{ 'Server'}} witrh ID {{ serverID }} is {{ getServerStatus () }} </p>
-</body>
-</html>
+<p
+  [ngStyle]="{backgroundColor : getColor ()}"
+  [ngClass]="{online: serverStatus === 'online'}"
+>{{ 'Server'}} with ID {{ serverID }} is {{ getServerStatus () }} </p>

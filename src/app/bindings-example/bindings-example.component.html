@@ -1,0 +1,20 @@
+<div id="example-container">
+<h4>Mi ejemplo Binding</h4>
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]="userName">
+
+<p [innerHTML]="userName"></p>
+
+<button class="btn btn-primary"
+        [disabled]="!userName"
+        (click)="cambiaNombre()">
+
+  Botonaco
+
+</button>
+
+  <p><strong>{{ userReset }}</strong></p>
+
+</div>
